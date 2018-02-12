@@ -39,6 +39,8 @@ module.exports = class {
 
     this.emitter.minLifetime = option.lifetime.min;
     this.emitter.maxLifetime = option.lifetime.max;
+
+    this.emitter.frequency = option.frequency;
   }
 
   changeImages(urlArray) {

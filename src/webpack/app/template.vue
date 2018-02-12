@@ -86,6 +86,15 @@
                 </v-list>
                 <v-divider></v-divider>
                 <v-list subheader>
+                  <v-subheader>frequency</v-subheader>
+                  <v-list-tile>
+                    <v-list-tile-content>
+                      <v-slider thumb-label step="0.001" min="0.005" max="0.1" v-model="particle.frequency"></v-slider>
+                    </v-list-tile-content>
+                  </v-list-tile>
+                </v-list>
+                <v-divider></v-divider>
+                <v-list subheader>
                   <v-subheader>particle image</v-subheader>
                   <v-list-tile>
                     <v-list-tile-content>
