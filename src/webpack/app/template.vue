@@ -95,6 +95,21 @@
                 </v-list>
                 <v-divider></v-divider>
                 <v-list subheader>
+                  <v-subheader>blend mode</v-subheader>
+                  <v-list-tile>
+                    <v-list-tile-content>
+                      <v-select
+                        :items="blendOptions"
+                        v-model="particle.blendMode"
+                        label="Select"
+                        single-line
+                        bottom
+                      ></v-select>
+                    </v-list-tile-content>
+                  </v-list-tile>
+                </v-list>
+                <v-divider></v-divider>
+                <v-list subheader>
                   <v-subheader>particle image</v-subheader>
                   <v-list-tile>
                     <v-list-tile-content>

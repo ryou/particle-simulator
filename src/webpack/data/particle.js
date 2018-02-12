@@ -1,3 +1,5 @@
+const PIXI = require('pixi.js');
+
 module.exports = {
   alpha: {
     start: 0.8,
@@ -28,6 +30,7 @@ module.exports = {
     max: 0.5,
   },
   frequency: 0.008,
+  blendMode: PIXI.BLEND_MODES.NORMAL,
   maxParticles: 1000,
   pos: {
     x: 128,

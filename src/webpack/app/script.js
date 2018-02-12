@@ -19,6 +19,76 @@ export default {
           value: './assets/images/circle.png',
         },
       ],
+      blendOptions: [
+        {
+          text: 'NORMAL',
+          value: PIXI.BLEND_MODES.NORMAL,
+        },
+        {
+          text: 'ADD',
+          value: PIXI.BLEND_MODES.ADD,
+        },
+        {
+          text: 'MULTIPLY',
+          value: PIXI.BLEND_MODES.MULTIPLY,
+        },
+        {
+          text: 'SCREEN',
+          value: PIXI.BLEND_MODES.SCREEN,
+        },
+        {
+          text: 'OVERLAY',
+          value: PIXI.BLEND_MODES.OVERLAY,
+        },
+        {
+          text: 'DARKEN',
+          value: PIXI.BLEND_MODES.DARKEN,
+        },
+        {
+          text: 'LIGHTEN',
+          value: PIXI.BLEND_MODES.LIGHTEN,
+        },
+        {
+          text: 'COLOR_DODGE',
+          value: PIXI.BLEND_MODES.COLOR_DODGE,
+        },
+        {
+          text: 'COLOR_BURN',
+          value: PIXI.BLEND_MODES.COLOR_BURN,
+        },
+        {
+          text: 'HARD_LIGHT',
+          value: PIXI.BLEND_MODES.HARD_LIGHT,
+        },
+        {
+          text: 'SOFT_LIGHT',
+          value: PIXI.BLEND_MODES.SOFT_LIGHT,
+        },
+        {
+          text: 'DIFFERENCE',
+          value: PIXI.BLEND_MODES.DIFFERENCE,
+        },
+        {
+          text: 'EXCLUSION',
+          value: PIXI.BLEND_MODES.EXCLUSION,
+        },
+        {
+          text: 'HUE',
+          value: PIXI.BLEND_MODES.HUE,
+        },
+        {
+          text: 'SATURATION',
+          value: PIXI.BLEND_MODES.SATURATION,
+        },
+        {
+          text: 'COLOR',
+          value: PIXI.BLEND_MODES.COLOR,
+        },
+        {
+          text: 'LUMINOSITY',
+          value: PIXI.BLEND_MODES.LUMINOSITY,
+        },
+      ],
     };
   },
   watch: {

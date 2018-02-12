@@ -10,7 +10,7 @@ module.exports = class {
     );
     this.options = options;
     this.emitter.emit = true;
-    this.emitter.particleBlendMode = PIXI.BLEND_MODES.ADD;
+    this.emitter.particleBlendMode = options.blendMode;
 
     this.beforeUpdateAt = null;
   }
@@ -41,6 +41,8 @@ module.exports = class {
     this.emitter.maxLifetime = option.lifetime.max;
 
     this.emitter.frequency = option.frequency;
+
+    this.emitter.particleBlendMode = option.blendMode;
   }
 
   changeImages(urlArray) {
