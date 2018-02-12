@@ -8,15 +8,15 @@ export default {
       app: null,
       emitter: null,
       particle: particleData,
-      particleImageUrl: '/assets/images/particle.png',
+      particleImageUrl: './assets/images/particle.png',
       imageOptions: [
         {
           text: 'gradient circle',
-          value: '/assets/images/particle.png',
+          value: './assets/images/particle.png',
         },
         {
           text: 'solid circle',
-          value: '/assets/images/circle.png',
+          value: './assets/images/circle.png',
         },
       ],
     };
