@@ -19,6 +19,44 @@ module.exports = class {
     const now = Date.now();
     if (this.beforeUpdateAt === null) this.beforeUpdateAt = now;
 
+    switch (this.move) {
+      case 'circle':
+        {
+          const rad = now / 100;
+          this.emitter.startSpeed = 0;
+          this.emitter.endSpeed = 0;
+          this.setSpawnPos(
+            (50 * Math.cos(rad)) + 128,
+            (50 * Math.sin(rad)) + 128,
+          );
+        }
+        break;
+      case 'cross':
+        {
+          const rad = now / 100;
+          this.emitter.startSpeed = 0;
+          this.emitter.endSpeed = 0;
+          this.setSpawnPos(
+            (50 * Math.cos(rad * 0.5)) + 128,
+            (30 * Math.sin(rad)) + 128,
+          );
+        }
+        break;
+      case 'cross02':
+        {
+          const rad = now / 100;
+          this.emitter.startSpeed = 0;
+          this.emitter.endSpeed = 0;
+          this.setSpawnPos(
+            (50 * Math.cos(rad * 0.7)) + 128,
+            (50 * Math.sin(rad)) + 128,
+          );
+        }
+        break;
+      default:
+        break;
+    }
+
     this.emitter.update((now - this.beforeUpdateAt) * 0.001);
 
     this.beforeUpdateAt = now;
@@ -43,6 +81,8 @@ module.exports = class {
     this.emitter.frequency = option.frequency;
 
     this.emitter.particleBlendMode = option.blendMode;
+
+    this.move = option.move;
   }
 
   changeImages(urlArray) {
